@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../fonts/GESSTwoBold-Bold.woff') format('woff2'),
+        url('../fonts/GESSTwoBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../fonts/GESSTwoLight-Light.woff2') format('woff2'),
+        url('../fonts/GESSTwoLight-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../fonts/GESSTwoMedium-Medium.woff2') format('woff2'),
+        url('../fonts/GESSTwoMedium-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
