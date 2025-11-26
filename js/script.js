@@ -12,18 +12,31 @@
     $(".activities_section .owl-carousel").owlCarousel({
       loop: true,
       margin: 30,
-      nav: true,
+      nav: false,
       dots: false,
       autoplay: true,
-      autoplayTimeout: 2500,
+      autoplayTimeout: 2000,
+      smartSpeed: 2000,
+      autoplaySpeed: 2000,
       autoplayHoverPause: true,
       responsive:{
-        0:{ items:2 },
+        0:{ items:1 },
         600:{ items:2 },
         1000:{ items:4 }
       }
     });
+
+      // للموبايل: توقف عند اللمس
+    owl.on('touchstart', function(){
+      owl.trigger('stop.owl.autoplay');
+    });
+    owl.on('touchend', function(){
+      owl.trigger('play.owl.autoplay',[0]);
+    });
+
+    
   });
+  
 
      $(document).ready(function(){
     $(".our-partiner .owl-carousel").owlCarousel({
