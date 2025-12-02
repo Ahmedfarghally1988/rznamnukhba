@@ -89,3 +89,47 @@ window.addEventListener("scroll", function () {
     startCount();
   }
 });
+
+
+let zoomPopup = document.querySelector(".zoom-popup");
+let zoomedImg = document.querySelector(".zoomed-img");
+let imgs = document.querySelectorAll(".zoom-image");
+
+imgs.forEach(img => {
+  img.addEventListener("click", () => {
+    zoomedImg.src = img.src;
+    zoomPopup.style.display = "flex";
+    setTimeout(() => zoomPopup.classList.add("show"), 10);
+  });
+});
+
+zoomPopup.addEventListener("click", () => {
+  zoomPopup.classList.remove("show");
+  setTimeout(() => zoomPopup.style.display = "none", 300);
+});
+
+let pageUrl = encodeURIComponent(window.location.href);
+let text = encodeURIComponent("شوف الصفحة دي");
+
+function toggleShare(){
+  document.getElementById("sharePopup").classList.toggle("active");
+}
+
+function shareFacebook() {
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank');
+}
+
+function shareWhatsapp() {
+  window.open(`https://api.whatsapp.com/send?text=${text}%20${pageUrl}`, '_blank');
+}
+
+function shareTwitter() {
+  window.open(`https://twitter.com/intent/tweet?text=${text}&url=${pageUrl}`, '_blank');
+}
+
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href);
+  alert("✅ تم نسخ الرابط");
+}
+
+
