@@ -4,6 +4,10 @@ html {
     font-family: 'GE SS Two';
 }
 
+.font-f{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .bg-main {
     background-color: #16533B;
 }
@@ -57,9 +61,9 @@ a {
 }
 
 .navbar .nav-link:hover,
-.navbar .nav-link.active:hover {
+.navbar .nav-link.active {
     background-color: #16533B;
-    color: #fff;
+    color: #fff !important;
 }
 
 .icon-search {
