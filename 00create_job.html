@@ -1,0 +1,1029 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/animate.min.css" />
+
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+
+  <link rel="icon" type="image/png" href="images/logo.svg" />
+  <title> روزنامة :: أنشاء وظيفة </title>
+
+</head>
+
+<body>
+
+  <!-- <h1 class="animate__animated animate__backInRight text-9xl">An animated element</h1> -->
+
+  <div id="loader">
+    <img src="images/logo.svg" alt="Logo" width="100">
+  </div>
+
+  <header>
+    <div class="bg-main py-3">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-4">
+              <div class="dropdown">
+                <button
+                  class="dropdown-toggle d-flex align-items-center bg-transparent fw-light border-0 text-white gap-2"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/4.jpg" class="rounded-circle" height="32" width="32" alt="user" />
+                  <span class="btn__login">اهلاً أحمد</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdwon_user_profile">
+                  <li>
+                    <a class="dropdown-item" href="#"> المعلومات الرئيسية <i class="bi bi-person me-2"></i> </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> الملف الشخصي <i class="bi bi-pencil-square me-2"></i> </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> الوظائف و الاعلانات <i class="bi bi-briefcase-fill me-2"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> أنشاء اعلان جديد <i class="bi bi-plus-circle"></i> </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#"> تسجيل الخروج <i
+                        class="bi bi-box-arrow-right me-2"></i> </a>
+                  </li>
+                </ul>
+              </div>
+              <label class="btn__login"> <a href="#" class="text-white fw-light text-decoration-none"> تسجيل الدخول <i
+                    class="bi bi-box-arrow-in-right"></i> </a></label>
+              <label class="btn__login"> <a href="#" class="text-white fw-light text-decoration-none"> أنشاء حساب <i
+                    class="bi bi-person-plus"></i> </a></label>
+            </div>
+          </div>
+          <div class="col-md-8 d-none d-md-block">
+            <div class="d-flex gap-4 align-items-center justify-content-end">
+              <a href="tel:+966500024213" class="text-white text-decoration-none fw-light fs-6 font-f">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                +966 50 002 4213 </a>
+              <a href="mailto:rznamnukhba@tanami.org.sa" class="text-white text-decoration-none fw-light fs-6 font-f">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                </svg>
+                rznamnukhba@tanami.org.sa </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="Logo" width="100">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+            <li class="nav-item px-3"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="about.html">من نحن</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="activities.html"> الفاعليات </a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="jobs.html"> الوظائف </a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="partiners.html">شركائنا</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">أضافة أعلان</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="add_activities.html">أضافة فاعلية</a></li>
+                <li><a class="dropdown-item" href="add_job.html">أضافة وظيفة</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="d-block d-md-none">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="mobileMenuLabel">القائمة</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="activities.html"> الفاعليات</a></li>
+                <li class="nav-item"><a class="nav-link" href="jobs.html">الوظائف </a></li>
+                <li class="nav-item"><a class="nav-link" href="partiners.html">شركائنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex justify-content-between align-items-center" href="#"
+                    data-bs-toggle="offcanvas" data-bs-target="#add-ads">
+                    أضافة أعلان
+                    <i class="bi bi-chevron-left"></i>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <!-- Submenu: الاعلانات -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="add-ads">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">أضافة أعلان</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"> <i
+                  class="fa-regular fa-circle-xmark"></i> </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li><a href="add_activities.html" class="nav-link"> أضافة فاعلية </a></li>
+                <li><a href="add_job.html" class="nav-link"> أضافة أعلان </a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Menu Mobile -->
+
+
+        <!-- Button Search modal -->
+        <a class="icon-search" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+        </a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+
+              <div class="modal-body">
+                <form class="input-group" role="search" aria-label="Search form">
+
+                  <input type="search" class="form-control py-3" placeholder="ابحث..." aria-label="search" name="q"
+                    id="bs-search" autocomplete="off" />
+
+                  <button class="icon-search-form" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <breadcrumb class="bg-secondary-subtle d-block py-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item breadcrumb_pages"><a href="#" class="text-main">الرئيسية</a></li>
+          <li class="breadcrumb-item breadcrumb_pages active" aria-current="page"> أنشاء وظيفة </li>
+        </ol>
+      </nav>
+    </div>
+  </breadcrumb>
+
+  <section class="user_info pt-4 rtl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="user_info_sidebar shadow-sm bg-white rounded-3">
+            <ul class="list-unstyled list-profile-page m-0">
+              <li><a href="employer_info.html" class="d-block active"> <i class="bi bi-person-circle"></i> المعلومات
+                  الرئيسية </a></li>
+              <li><a href="00edit_employer_info.html" class="d-block"> <i class="bi bi-pencil-square"></i> تعديل الملف
+                  الشخصي
+                </a></li>
+              <li><a href="00change_password_employer.html" class="d-block"> <i class="bi bi-key"></i> تغييير كلمة
+                  السر </a>
+              </li>
+              <li><a href="00jobs_employer.html" class="d-block"> <i class="bi bi-briefcase-fill"></i> الوظائف
+                  والاعلانات </a>
+              </li>
+              <li><a href="00create_job.html" class="d-block"> <i class="bi bi-plus-circle"></i> أنشاء أعلان
+                </a></li>
+              <li><a href="#" class="d-block"> <i class="bi bi-box-arrow-right"></i> تسجيل الخروج </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="user_info_content px-5 py-5 shadow-sm bg-white rounded-3">
+            <h3 class="mb-4 fw-light fs-4 tit_main_profile position-relative"> <i class="bi bi-plus-circle"></i> أنشاء
+              أعلان </h3>
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <label class="form-label mb-2 fw-light"> المسمى الوظيفى </label>
+                <input type="text" class="form-control input_profile fs-6"
+                  placeholder="مصمم/مصممة جرافيك ( Finaliser ) (يشترط خبرة) - المهندسين - الجيزة">
+              </div>
+
+              <div class="col-md-12 mb-4">
+                <label class="form-label mb-2 fw-light"> وصف الوظيفة </label>
+                <textarea class="form-control input_profile fs-6 p-3 h-auto" rows="4"
+                  placeholder="مطلوب مصممين جرافيكس finalizer qلاستلام تصميمات الطباعة وتجهيز البرنت وكات والكاتر بلوتر خبرة ببرامج التصميم Photoshop - Illustrator - Coreldrow وخصوصا ال Coreldrow للعمل في شركة طباعه بالمهندسين  يفضل قرب السكن من منطقة المهندسين  يفضل من سبق لهم العمل في نفس الوظيفه  مرتبات مجزية ويوجد تأمين  المواعيد من ١٠ل٦ ومن ٤ل١٢"></textarea>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> السن المطلوب </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> أصغر من 20 </option>
+                  <option value="2"> أكبر من 50 </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> النوع </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> ذكر </option>
+                  <option value="2"> أنثى </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> عدد سنوات الخبرة </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> بدون خبرة </option>
+                  <option value="2"> من 1 الى 3 سنوات </option>
+                  <option value="3"> أكثر من 5 سنوات </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> الجنسية </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> مصري </option>
+                  <option value="2"> أجنبي </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light">اللغات</label>
+
+                <div class="dropdown w-100">
+                  <button class="form-select form-control input_profile fs-6" type="button" data-bs-toggle="dropdown">
+                    اختر اللغات
+                  </button>
+
+                  <ul class="dropdown-menu w-100 fw-light p-3">
+                    <div class="row">
+
+                      <div class="col-6">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input lang-check" type="checkbox" value="العربية" id="lang1">
+                            <label class="form-check-label" for="lang1">العربية</label>
+                          </div>
+                        </li>
+                      </div>
+
+                      <div class="col-6">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input lang-check" type="checkbox" value="الانجليزية" id="lang2">
+                            <label class="form-check-label" for="lang2">الانجليزية</label>
+                          </div>
+                        </li>
+                      </div>
+
+                      <div class="col-6">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input lang-check" type="checkbox" value="الايطالية" id="lang3">
+                            <label class="form-check-label" for="lang3">الايطالية</label>
+                          </div>
+                        </li>
+                      </div>
+
+                      <div class="col-6">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input lang-check" type="checkbox" value="الفرنسية" id="lang4">
+                            <label class="form-check-label" for="lang4">الفرنسية</label>
+                          </div>
+                        </li>
+                      </div>
+
+                      <div class="col-6">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input lang-check" type="checkbox" value="الالمانية" id="lang5">
+                            <label class="form-check-label" for="lang5">الالمانية</label>
+                          </div>
+                        </li>
+                      </div>
+
+                      <div class="col-6">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input lang-check" type="checkbox" value="الاسبانية" id="lang6">
+                            <label class="form-check-label" for="lang6">الاسبانية</label>
+                          </div>
+                        </li>
+                      </div>
+
+                    </div>
+                  </ul>
+
+
+
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> المؤهل الدراسي </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> دبلوم نظام ٥ سنوات (فوق متوسط) </option>
+                  <option value="2"> بكالوريوس </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> الراتب المتوقع </label>
+                <input type="text" class="form-control input_profile fs-6" placeholder="غي معلن">
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> نوع الدوام </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> دوام كامل </option>
+                  <option value="2"> دوام جزئي </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> مجال الوظيفة </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> تكنولوجيا معلومات واتصالات </option>
+                  <option value="2"> تكنولوجيا معلومات واتصالات </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> تخصص الوظيفة </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> جرافيك </option>
+                  <option value="2"> جرافيك </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> المنطقة </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> منطقة الرياض </option>
+                  <option value="2"> منطقة الرياض </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> المدينة </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> منطقة الرياض </option>
+                  <option value="2"> منطقة الرياض </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <label class="form-label mb-2 fw-light"> الحي </label>
+                <select class="form-select form-control input_profile fs-6">
+                  <option selected>أختر </option>
+                  <option value="1"> منطقة الرياض </option>
+                  <option value="2"> منطقة الرياض </option>
+                  <option value="3"> غير محدد </option>
+                </select>
+              </div>
+
+              <div class="col-12 mb-4">
+                <label class="form-label mb-2 fw-light">مميزات الوظيفة</label>
+
+                <div id="features-container">
+
+                  <div class="input-group mb-2 feature-item">
+                    <input type="text" class="form-control input_profile fs-6" placeholder="ميزة رقم 1">
+                    <button class="btn btn-outline-danger remove-feature" type="button">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+                <button type="button" id="add-feature" class="btn btn-outline-primary btn-sm mt-2">
+                  + إضافة ميزة
+                </button>
+              </div>
+
+              <div class="col-12 mb-4">
+                <label class="form-label mb-2 fw-light">اشتراطات الوظيفة</label>
+
+                <div id="requirements-container">
+
+                  <div class="input-group mb-2 requirement-item">
+                    <input type="text" class="form-control input_profile fs-6" placeholder="اشتراط رقم 1">
+
+                    <button class="btn btn-outline-danger remove-requirement" type="button">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+                <button type="button" id="add-requirement" class="btn btn-outline-primary btn-sm mt-2">
+                  + إضافة اشتراط
+                </button>
+              </div>
+
+              <div class="col-md-12 mb-4">
+                <label class="form-label mb-2 d-block">الصورة الشخصية / اللوجو</label>
+
+                <label for="fileInput2" class="upload-box">
+                  <div class="upload-content" id="uploadContent">
+                    <span class="plus">+</span>
+                    <p>اضغط لاختيار الصورة</p>
+                    <small>PNG, JPG (Max 5MB)</small>
+                  </div>
+
+                  <img id="imagePreview" class="image-preview d-none" />
+
+                  <!-- زر الحذف -->
+                  <button type="button" class="remove-image d-none" id="removeImage">
+                    &times;
+                  </button>
+                </label>
+
+
+                <input type="file" id="fileInput2" accept="image/*" hidden />
+              </div>
+
+              <div class="col-md-12 text-start">
+                <button class="btn__main__login px-4 py-2"> أنشاء الاعلان </button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-main text-white pt-4">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="counter_footer">
+              <div class="d-flex flex-wrap g-3">
+                <div class="col-md-3 col-12 block_counter">
+                  <i class="bi bi-star"></i>
+                  <div class="counter" data-target="2500">0</div>
+                  <h5> عدد الزوار </h5>
+                </div>
+                <div class="col-md-3 col-12 block_counter">
+                  <i class="bi bi-star"></i>
+                  <div class="counter" data-target="1500">0</div>
+                  <h5> عدد الفاعليات </h5>
+                </div>
+                <div class="col-md-3 col-12 block_counter">
+                  <i class="bi bi-star"></i>
+                  <div class="counter" data-target="1900">0</div>
+                  <h5> عدد المبادرات </h5>
+                </div>
+                <div class="col-md-3 col-12 block_counter">
+                  <i class="bi bi-star"></i>
+                  <div class="counter" data-target="850">0</div>
+                  <h5> عدد الاستمارات </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-4">
+            <div class="about_footer">
+              <img src="images/logo.svg" alt="Logo" width="100">
+              <p class="fw-lighter mt-3">
+                هي منصة لرصد مواعيد وأماكن تنفيذ المبادرات المجتمعية والبرامج التدريبية وورش العمل والأنشطة
+                والفعاليات المتعلقة بالقطاعات الثلاث أولًا بأول.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu_footer">
+              <h3>أقسام الموقع</h3>
+              <ul>
+                <li> <a href="#">الرئيسية</a> </li>
+                <li> <a href="#">التصنيفات</a> </li>
+                <li> <a href="#">الاعلانات</a> </li>
+                <li> <a href="#">شركائنا</a> </li>
+                <li> <a href="#">أضافة أعلان</a> </li>
+                <li> <a href="#">الجمعيات</a> </li>
+                <li> <a href="#">أشترك الان</a> </li>
+                <li> <a href="#">أتصل بنا</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu_footer">
+              <h3>استكشاف الآن</h3>
+              <form class="newsletter2">
+                <button type="submit">اشترك </button>
+                <input type="email" placeholder="اكتب إيميلك" required>
+              </form>
+
+              <p class="font-f"> <strong class="fw-light"> جوال : </strong> +966 50 002 4213 </p>
+              <p class="font-f"> <strong class="fw-light"> البريد الاكتروني : </strong> rznamnukhba@tanami.org.sa </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-mian-2 py-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="social-header d-flex gap-3">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                    </path>
+                  </svg></a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
+                    </path>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 fs-6 fw-light text-start">
+              <p class="mb-0"> © روزنامة النخبة - جميع الحقوق محفوظة </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+    <!----------- new script jobs ------------->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script>
+      const fileInput = document.getElementById("fileInput2");
+      const preview = document.getElementById("imagePreview");
+      const uploadContent = document.getElementById("uploadContent");
+      const removeBtn = document.getElementById("removeImage");
+
+      fileInput.addEventListener("change", function () {
+        const file = this.files[0];
+        if (!file || !file.type.startsWith("image/")) return;
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+          preview.classList.remove("d-none");
+          uploadContent.style.display = "none";
+          removeBtn.classList.remove("d-none");
+        };
+        reader.readAsDataURL(file);
+      });
+
+      removeBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // يمنع فتح اختيار الملفات
+        fileInput.value = "";
+        preview.src = "";
+        preview.classList.add("d-none");
+        uploadContent.style.display = "block";
+        removeBtn.classList.add("d-none");
+      });
+    </script>
+
+    <script>
+      const input = document.querySelector("#phone");
+
+      const iti = window.intlTelInput(input, {
+        initialCountry: "eg",
+        preferredCountries: ["eg", "sa", "ae"],
+        separateDialCode: true,
+        nationalMode: false,
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/utils.js",
+      });
+
+      // مثال عند الإرسال
+      function getFullNumber() {
+        console.log(iti.getNumber()); // +2010xxxxxxx
+      }
+    </script>
+
+    <script>
+
+      let rowToDelete = null;
+
+      // لما تضغط على أي زر حذف
+      document.querySelectorAll('.delete-ad-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          rowToDelete = btn.closest('tr'); // خزن الصف اللي هيتحذف
+        });
+      });
+
+      // لما تضغط على زر تأكيد الحذف في المودال
+      document.getElementById('confirmDeleteAd').addEventListener('click', function () {
+        if (rowToDelete) {
+          rowToDelete.remove(); // احذف الصف
+          rowToDelete = null;   // رجع المتغير فارغ
+        }
+
+        // اغلاق المودال
+        const modalEl = document.getElementById('deleteAdModal');
+        const modal = bootstrap.Modal.getInstance(modalEl);
+        modal.hide();
+      });
+
+
+    </script>
+
+    <script>
+      document.querySelectorAll('.status-radio').forEach(radio => {
+        radio.addEventListener('change', function () {
+
+          const row = this.closest('tr');
+
+          // امسح أي حالة قديمة
+          row.classList.remove(
+            'status-viewed',
+            'status-review',
+            'status-fit',
+            'status-notfit'
+          );
+
+          // أضف الحالة الجديدة
+          if (this.value !== "default") {
+            row.classList.add('status-' + this.value);
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.getElementById('statusFilter').addEventListener('change', function () {
+
+        const selected = this.value;
+        const rows = document.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+
+          if (selected === "all") {
+            row.style.display = "";
+            return;
+          }
+
+          if (row.classList.contains('status-' + selected)) {
+            row.style.display = "";
+          } else {
+            row.style.display = "none";
+          }
+
+        });
+
+      });
+    </script>
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+
+        // تحديث العدادات
+        function updateCounters() {
+
+          const rows = document.querySelectorAll("tbody tr");
+
+          let counts = {
+            fit: 0,
+            notfit: 0,
+            review: 0,
+            viewed: 0,
+            default: 0
+          };
+
+          rows.forEach(row => {
+
+            if (row.classList.contains("status-fit")) {
+              counts.fit++;
+            }
+            else if (row.classList.contains("status-notfit")) {
+              counts.notfit++;
+            }
+            else if (row.classList.contains("status-review")) {
+              counts.review++;
+            }
+            else if (row.classList.contains("status-viewed")) {
+              counts.viewed++;
+            }
+            else {
+              counts.default++;
+            }
+
+          });
+
+          document.getElementById("count-fit").textContent = counts.fit;
+          document.getElementById("count-notfit").textContent = counts.notfit;
+          document.getElementById("count-review").textContent = counts.review;
+          document.getElementById("count-viewed").textContent = counts.viewed;
+          document.getElementById("count-default").textContent = counts.default;
+        }
+
+
+        // تغيير الحالة
+        document.querySelectorAll(".status-radio").forEach(radio => {
+
+          radio.addEventListener("change", function () {
+
+            const row = this.closest("tr");
+
+            // إزالة كل الحالات القديمة
+            row.classList.remove(
+              "status-fit",
+              "status-notfit",
+              "status-review",
+              "status-viewed"
+            );
+
+            // لو مش default نضيف الحالة الجديدة
+            if (this.value !== "default") {
+              row.classList.add("status-" + this.value);
+            }
+
+            updateCounters();
+          });
+
+        });
+
+
+        // تشغيل العدادات أول ما الصفحة تفتح
+        updateCounters();
+
+      });
+
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        document.querySelectorAll(".dropdown").forEach(dropdown => {
+
+          const button = dropdown.querySelector("button");
+          const checkboxes = dropdown.querySelectorAll(".lang-check");
+
+          checkboxes.forEach(check => {
+
+            check.addEventListener("change", function () {
+
+              const selected = [];
+
+              dropdown.querySelectorAll(".lang-check:checked")
+                .forEach(c => selected.push(c.value));
+
+              if (selected.length > 0) {
+                button.textContent = selected.join(" - ");
+              } else {
+                button.textContent = "اختر اللغات";
+              }
+
+            });
+
+          });
+
+        });
+
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        const container = document.getElementById("features-container");
+        const addBtn = document.getElementById("add-feature");
+
+        let count = 1;
+
+        // إضافة ميزة
+        addBtn.addEventListener("click", function () {
+
+          count++;
+
+          const div = document.createElement("div");
+          div.classList.add("input-group", "mb-2", "feature-item");
+
+          div.innerHTML = `
+      <input type="text" 
+             class="form-control input_profile fs-6" 
+             placeholder="ميزة رقم ${count}">
+      <button class="btn btn-outline-danger remove-feature" type="button">
+        <i class="bi bi-trash"></i>
+      </button>
+    `;
+
+          container.appendChild(div);
+
+        });
+
+
+        // حذف ميزة (Event Delegation)
+        container.addEventListener("click", function (e) {
+
+          if (e.target.closest(".remove-feature")) {
+
+            const item = e.target.closest(".feature-item");
+
+            // امنع حذف آخر input
+            if (container.children.length > 1) {
+              item.remove();
+            }
+
+          }
+
+        });
+
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        const container = document.getElementById("requirements-container");
+        const addBtn = document.getElementById("add-requirement");
+
+        let count = 1;
+
+        // إضافة اشتراط
+        addBtn.addEventListener("click", function () {
+
+          count++;
+
+          const div = document.createElement("div");
+          div.classList.add("input-group", "mb-2", "requirement-item");
+
+          div.innerHTML = `
+      <input type="text" 
+             class="form-control input_profile fs-6" 
+             placeholder="اشتراط رقم ${count}">
+      <button class="btn btn-outline-danger remove-requirement" type="button">
+        <i class="bi bi-trash"></i>
+      </button>
+    `;
+
+          container.appendChild(div);
+
+        });
+
+
+        // حذف اشتراط
+        container.addEventListener("click", function (e) {
+
+          if (e.target.closest(".remove-requirement")) {
+
+            const item = e.target.closest(".requirement-item");
+
+            if (container.children.length > 1) {
+              item.remove();
+            }
+
+          }
+
+        });
+
+      });
+    </script>
+
+    <!----------- end new script jobs ------------->
+
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let count = 1;
+        document.getElementById("addAxis").addEventListener("click", function () {
+          count++;
+          const container = document.getElementById("axesContainer");
+          const newSelect = `
+        <div class="mb-3 axis-item position-relative">
+          <div class="d-flex gap-2 align-items-center">
+            <div class="flex-grow-1">            
+              <input type="email" class="form-control input_list" placeholder="أجابتك">
+            </div>       
+              <button type="button" class="border-0 remove-axis">
+              ✕ حذف
+            </button>   
+          </div>
+        </div>
+   
+    `;
+          container.insertAdjacentHTML("beforeend", newSelect);
+
+        });
+        document.getElementById("axesContainer").addEventListener("click", function (e) {
+          if (e.target.classList.contains("remove-axis")) {
+            e.target.closest(".axis-item").remove();
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.getElementById("fileInput2").addEventListener("change", function () {
+        if (this.files.length > 0) {
+          document.getElementById("fileName2").innerText = this.files[0].name
+        }
+      })
+    </script>
+
+    <script>
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

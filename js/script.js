@@ -1,12 +1,37 @@
+function wrapEnglishWords(element) {
+  if (element.nodeType === Node.TEXT_NODE) {
+    const text = element.textContent;
+    if (/[A-Za-z0-9]/.test(text)) {
+      const newHTML = text.replace(
+        /\b[A-Za-z0-9]+\b/g,
+        '<span class="english-word">$&</span>'
+      );
+      const span = document.createElement('span');
+      span.innerHTML = newHTML;
+      element.replaceWith(span);
+    }
+  } else {
+    element.childNodes.forEach(child => wrapEnglishWords(child));
+  }
+}
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  wrapEnglishWords(document.body);
+});
+
 
   window.onload = function() {
     document.getElementById("loader").style.display = "none";
-    
+
   };
 
 
   new WOW().init();
-  
+
 
    $(document).ready(function(){
     $(".activities_section .owl-carousel").owlCarousel({
@@ -34,9 +59,9 @@
       owl.trigger('play.owl.autoplay',[0]);
     });
 
-    
+
   });
-  
+
 
      $(document).ready(function(){
     $(".our-partiner .owl-carousel").owlCarousel({
@@ -57,7 +82,7 @@
 
 
   const counters = document.querySelectorAll('.counter');
-let started = false; 
+let started = false;
 
 function startCount() {
   if (!started) {
@@ -109,7 +134,7 @@ zoomPopup.addEventListener("click", () => {
 });
 
 let pageUrl = encodeURIComponent(window.location.href);
-let text = encodeURIComponent("شوف الصفحة دي");
+let text = encodeURIComponent("أكتشف هنا");
 
 function toggleShare(){
   document.getElementById("sharePopup").classList.toggle("active");
@@ -133,3 +158,97 @@ function copyLink() {
 }
 
 
+/*********** New Script ************/
+
+function togglePassword(inputId, iconEl) {
+  const password = document.getElementById(inputId);
+
+  if (password.type === "password") {
+    password.type = "text";
+    iconEl.classList.replace("bi-eye", "bi-eye-slash");
+  } else {
+    password.type = "password";
+    iconEl.classList.replace("bi-eye-slash", "bi-eye");
+  }
+}
+
+
+function handleCredentialResponse(response) {
+  // JWT Token
+  const token = response.credential;
+  console.log("Google Token:", token);
+
+  // فك التوكن (Front-end فقط)
+  const user = JSON.parse(atob(token.split('.')[1]));
+  console.log(user);
+
+  /*
+    user = {
+      name,
+      email,
+      picture,
+      sub (Google ID)
+    }
+  */
+
+  alert("مرحبًا " + user.name);
+}
+
+
+function openBioModal() {
+  document.getElementById('bio1').value =
+    document.querySelector('.bio-text-1').innerText.trim();
+}
+
+function saveBio() {
+  document.querySelector('.bio-text-1').innerText =
+    document.getElementById('bio1').value;
+}
+
+function generatePDF() {
+  const body = document.body;
+  const element = document.getElementById('cvContent');
+
+  // فعّل وضع PDF
+  body.classList.add('pdf-mode');
+
+  html2pdf().set({
+    margin: 0,
+    filename: 'Ahmed_Farghally_CV.pdf',
+    image: { type: 'jpeg', quality: 1 },
+    html2canvas: {
+      scale: 1.5,
+      useCORS: true,
+      scrollX: 0,
+      scrollY: 0
+    },
+    jsPDF: {
+      unit: 'mm',
+      format: 'a4',
+      orientation: 'portrait'
+    }
+  }).from(element).save().then(() => {
+    // رجّع الصفحة لطبيعتها
+    body.classList.remove('pdf-mode');
+  });
+}
+
+// script.js
+
+
+    document.getElementById("sendApplication").addEventListener("click", function () {
+
+  const selectedCV = document.getElementById("cvSelect").value;
+
+  if (!selectedCV) {
+    alert("من فضلك اختر السيرة الذاتية");
+    return;
+  }
+
+  // إخفاء الفورم
+  document.getElementById("applyForm").classList.add("d-none");
+
+  // إظهار رسالة النجاح
+  document.getElementById("successMessage").classList.remove("d-none");
+
+});

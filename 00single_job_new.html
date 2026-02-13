@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
+  <!----------- new script jobs ------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css" />
+  <!----------- new script jobs ------------->
 
   <link rel="icon" type="image/png" href="images/logo.svg" />
   <title>روزنامة :: تفاصيل الوظيفة </title>
@@ -22,7 +25,6 @@
 
 <body>
 
-  <!-- <h1 class="animate__animated animate__backInRight text-9xl">An animated element</h1> -->
 
   <div id="loader">
     <img src="images/logo.svg" alt="Logo" width="100">
@@ -32,34 +34,45 @@
     <div class="bg-main py-3">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="d-flex align-items-center gap-4">
-              <a href="#" class="bg-mian-2 hover-btn text-white text-decoration-none rounded-1 px-3 fw-light fs-6 py-1">
-                أشترك الان </a>
-              <div class="social-header d-flex gap-3">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path
-                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                  </svg></a>
-                <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-twitter-x" viewBox="0 0 16 16">
-                    <path
-                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                  </svg>
-                </a>
+              <div class="dropdown">
+                <button
+                  class="dropdown-toggle d-flex align-items-center bg-transparent fw-light border-0 text-white gap-2"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/4.jpg" class="rounded-circle" height="32" width="32" alt="user" />
+                  <span class="btn__login">اهلاً أحمد</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdwon_user_profile">
+                  <li>
+                    <a class="dropdown-item" href="#"> المعلومات الشخصية <i class="bi bi-person me-2"></i> </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> تعديل الملف الشخصي <i class="bi bi-pencil-square me-2"></i> </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> سيرتي الذاتية <i class="bi bi-file-earmark-person me-2"></i> </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> تقديماتي على الوظائف <i class="bi bi-briefcase-fill me-2"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#"> تسجيل الخروج <i
+                        class="bi bi-box-arrow-right me-2"></i> </a>
+                  </li>
+                </ul>
               </div>
+              <label class="btn__login"> <a href="#" class="text-white fw-light text-decoration-none"> تسجيل الدخول <i
+                    class="bi bi-box-arrow-in-right"></i> </a></label>
+              <label class="btn__login"> <a href="#" class="text-white fw-light text-decoration-none"> أنشاء حساب <i
+                    class="bi bi-person-plus"></i> </a></label>
             </div>
           </div>
-          <div class="col-md-9 d-none d-md-block">
+          <div class="col-md-8 d-none d-md-block">
             <div class="d-flex gap-4 align-items-center justify-content-end">
               <a href="tel:+966500024213" class="text-white text-decoration-none fw-light fs-6 font-f">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -197,11 +210,12 @@
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item breadcrumb_pages"><a href="#" class="text-main">الرئيسية</a></li>
           <li class="breadcrumb-item breadcrumb_pages"><a href="#" class="text-main">الوظائف</a></li>
-          <li class="breadcrumb-item breadcrumb_pages active" aria-current="page">تفاصيل الوظيفة</li>
+          <li class="breadcrumb-item breadcrumb_pages active" aria-current="page"> تفاصيل الوظيفة </li>
         </ol>
       </nav>
     </div>
   </breadcrumb>
+
 
   <section class="py-5">
     <div class="container">
@@ -217,31 +231,142 @@
         <div class="col-md-8 col-12 rtl">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="text-main fs-4 mt-4 mt-sm-0">اخصائي متاجر إلكترونية</h3>
+              <h3 class="text-main fs-4 mt-4 mt-sm-0">اخصائي ادارة متاجر الكترونية خبره لا تقل عن 5 سنوات</h3>
               <div class="d-flex flex-wrap border-top border-bottom my-4 py-2">
                 <div class="col-md-4 option_job">
-                  <h5> <i class="bi bi-person"></i> اسم الجهة </h5>
+                  <h5> اسم الجهة </h5>
                   <p>الأكاديمية السعودية الرقمية</p>
                 </div>
                 <div class="col-md-4 option_job">
-                  <h5> <i class="bi bi-send"></i> نوع الجهة </h5>
-                  <p>جهة غير الربحية</p>
-                </div>
-                <div class="col-md-4 option_job">
-                  <h5> <i class="bi bi-building"></i> اسم المدينة </h5>
-                  <p>الرياض</p>
-                </div>
-                <div class="col-md-4 option_job">
-                  <h5> <i class="bi bi-wallet2"></i> الراتب </h5>
+                  <h5> الراتب </h5>
                   <p>1500 - 2500 ريال</p>
                 </div>
                 <div class="col-md-4 option_job">
-                  <h5> <i class="bi bi-people"></i> الفئة </h5>
-                  <p>رجال و نساء</p>
+                  <h5> الفئة / النوع</h5>
+                  <p>رجال ونساء</p>
                 </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> اسم المدينة </h5>
+                  <p>الرياض</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> المنطقة </h5>
+                  <p>منطقة الرياض</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> الحي </h5>
+                  <p>حي الرياض</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> المستوى التعليمي </h5>
+                  <p>بكالوريوس حاسبات ومعلومات</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> السن المطلوب </h5>
+                  <p>من 30 -50 سنة</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> المجال </h5>
+                  <p>تقنية المعلومات</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> التخصص </h5>
+                  <p>جرافيك ديزاين</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> الجنسية </h5>
+                  <p>سعودي</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> بلد الاقامة </h5>
+                  <p>السعودية</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> سنوات الخبرة </h5>
+                  <p>من 2 - 5 سنوات</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> نوع الدوام </h5>
+                  <p>دوام كامل</p>
+                </div>
+
+                <div class="col-md-4 option_job">
+                  <h5> اللغات </h5>
+                  <p>العربية، الإنجليزية</p>
+                </div>
+
               </div>
             </div>
             <div class="col-md-12">
+              <div
+                class="d-flex block_action_job justify-content-between align-items-center gap-3 bg-white shadow-sm rounded-2 p-3 mb-4 px-4">
+                <div class="item_job_option text-center mt-2">
+                  <h5 class="fw-light">متقدمين للوظيفة</h5>
+                  <label class="counter font-f fs-4" data-target="100">0</label>
+                </div>
+
+                <div class="item_job_option text-center mt-2">
+                  <h5 class="fw-light">تم مشاهدة ملفهم</h5>
+                  <label class="counter font-f fs-4" data-target="80">0</label>
+                </div>
+
+                <div class="item_job_option text-center mt-2">
+                  <h5 class="fw-light">تحت المراجعة</h5>
+                  <label class="counter font-f fs-4" data-target="50">0</label>
+                </div>
+
+                <div class="item_job_option text-center mt-2">
+                  <h5 class="fw-light">مناسبين</h5>
+                  <label class="counter font-f fs-4" data-target="30">0</label>
+                </div>
+
+                <div class="item_job_option text-center mt-2">
+                  <h5 class="fw-light">مرفوضين</h5>
+                  <label class="counter font-f fs-4" data-target="20">0</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <button
+                class="w-100 text-black py-3 px-4 rounded-2 text-decoration-none text-center fw-light mb-4 apply-btn"
+                data-bs-toggle="modal" data-bs-target="#applyModal">
+
+                التقديم المباشر على الوظيفة
+              </button>
+
+            </div>
+
+            <div class="col-md-12">
+              <p class="fw-light"> يحافظ على الضوابط المحاسبية من خلال التوصية بالسياسات والإجراءات. تحليل وتقديم تقرير عن الوضع المالي بما في ذلك الفروق في بيان الدخل، وإبلاغ النتائج المالية للإدارة، وإعداد الميزانية وتحليلها. إسداء المشورة للإدارة بشأن قضايا مثل استخدام الموارد، والاستراتيجيات الضريبية، والافتراضات الكامنة وراء توقعات الميزانية. يحافظ على الضوابط المحاسبية  </p>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <h3 class="fs-5 mb-3">مميزات الوظيفة</h3>
+              <div class="jobRequirements">
+                <ol>
+                  <li> <i class="bi bi-check2-circle"></i> ان يكون سعودي الجنسية </li>
+                  <li> <i class="bi bi-check2-circle"></i> الإجادة التامه للحاسب الآلي </li>
+                  <li> <i class="bi bi-check2-circle"></i> درجة البكالوريوس او الدبلوم او مايعادلها في المحاسبة </li>
+                  <li> <i class="bi bi-check2-circle"></i> خبرة في مجال التخصص </li>
+                  <li> <i class="bi bi-check2-circle"></i> التفرغ التام </li>
+                  <li> <i class="bi bi-check2-circle"></i> اجتياز المقابلة الشخصية </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
               <h3 class="fs-5 mb-3">اشتراطات الوظيفة</h3>
               <div class="jobRequirements">
                 <ol>
@@ -254,208 +379,17 @@
                 </ol>
               </div>
             </div>
+
+
             <div class="col-md-6 col-12">
               <a href="#"
                 class="bg-mian-2 text-white py-2 px-4 rounded-2 text-decoration-none fw-light icon_btn_fa3lya">
-                رابط التقديم علي الوظيفة <i class="bi bi-link-45deg"></i>
+                شارك هذه الوظيفة <i class="bi bi-link-45deg"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
-  </section>
-
-
-  <section class="py-5">
-    <div class="container">
-      <div class="row rtl">
-        <div class="col-md-12">
-          <h3 class="fw-light text-main mb-3"> وظائف مشابهة </h3>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mt-4">
-          <div class="block_main_job">
-            <div class="img_block_job">
-              <a href="#"> <img src="images/106516AF.png" alt="" title="" /> </a>
-            </div>
-            <div class="desc_block_job">
-              <h3> <a href="#"> ادارة المتاجر إلكترونية</a> </h3>
-              <span> <i class="bi bi-calendar"></i> 5 أكتوبر، 2025 </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="our-partiner py-5 bg-main-2 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="tit_section text-main">
-            <h3> شركائنا </h3>
-            <p class="fw-lighter text-black"> هي منصة لرصد مواعيد وأماكن تنفيذ المبادرات المجتمعية والبرامج التدريبية
-              والفعاليات أولًا بأول </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-3">
-        <div class="owl-carousel owl-theme">
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-1.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-2.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-3.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-1.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-2.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-3.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-1.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-2.png" alt=""> </a>
-          </div>
-          <div class="img_partiner position-relative">
-            <a href="#"> <img src="images/logo-3.png" alt=""> </a>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
   </section>
 
 
@@ -570,14 +504,404 @@
 
   </footer>
 
+
+  <div class="modal modal--apply fade" id="applyModal" dir="rtl">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+
+        <div class="modal-header">
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal"></button>
+          <h5 class="modal-title">التقديم على الوظيفة</h5>
+        </div>
+
+
+        <div class="modal-body">
+
+          <!-- الفورم -->
+          <div id="applyForm">
+
+            <div class="mb-3">
+              <label class="form-label">اختر السيرة الذاتية</label>
+              <select class="form-select" id="cvSelect">
+                <option value="">اختر CV...</option>
+                <option value="1">UI UX Designer</option>
+                <option value="2">Frontend Developer</option>
+              </select>
+            </div>
+
+            <div class="text-end">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+              <button class="btn btn-primary" id="sendApplication">إرسال الطلب</button>
+            </div>
+
+          </div>
+
+
+          <!-- رسالة النجاح -->
+          <div id="successMessage" class="text-center d-none">
+
+            <div class="mb-3">
+              <i class="bi bi-check-circle-fill text-success" style="font-size: 60px;"></i>
+            </div>
+
+            <h5 class="mb-2">تم إرسال طلبك بنجاح</h5>
+            <p class="text-muted">لم يتم مشاهدة الطلب حتى الآن</p>
+
+          </div>
+
+        </div>      
+
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
-
-  <script src="js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/wow.min.js"></script>
+
+
+  <!----------- new script jobs ------------->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="js/html2pdf.bundle.min.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
+  <script>
+    const fileInput = document.getElementById("fileInput2");
+    const preview = document.getElementById("imagePreview");
+    const uploadContent = document.getElementById("uploadContent");
+    const removeBtn = document.getElementById("removeImage");
+
+    fileInput.addEventListener("change", function () {
+      const file = this.files[0];
+      if (!file || !file.type.startsWith("image/")) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+        preview.classList.remove("d-none");
+        uploadContent.style.display = "none";
+        removeBtn.classList.remove("d-none");
+      };
+      reader.readAsDataURL(file);
+    });
+
+    removeBtn.addEventListener("click", function (e) {
+      e.preventDefault(); // يمنع فتح اختيار الملفات
+      fileInput.value = "";
+      preview.src = "";
+      preview.classList.add("d-none");
+      uploadContent.style.display = "block";
+      removeBtn.classList.add("d-none");
+    });
+  </script>
+
+  <script>
+    const input = document.querySelector("#phone");
+
+    const iti = window.intlTelInput(input, {
+      initialCountry: "eg",
+      preferredCountries: ["eg", "sa", "ae"],
+      separateDialCode: true,
+      nationalMode: false,
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/utils.js",
+    });
+
+    // مثال عند الإرسال
+    function getFullNumber() {
+      console.log(iti.getNumber()); // +2010xxxxxxx
+    }
+  </script>
+
+  <script>
+
+    let rowToDelete = null;
+
+    // لما تضغط على أي زر حذف
+    document.querySelectorAll('.delete-ad-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        rowToDelete = btn.closest('tr'); // خزن الصف اللي هيتحذف
+      });
+    });
+
+    // لما تضغط على زر تأكيد الحذف في المودال
+    document.getElementById('confirmDeleteAd').addEventListener('click', function () {
+      if (rowToDelete) {
+        rowToDelete.remove(); // احذف الصف
+        rowToDelete = null;   // رجع المتغير فارغ
+      }
+
+      // اغلاق المودال
+      const modalEl = document.getElementById('deleteAdModal');
+      const modal = bootstrap.Modal.getInstance(modalEl);
+      modal.hide();
+    });
+
+
+  </script>
+
+  <script>
+    document.querySelectorAll('.status-radio').forEach(radio => {
+      radio.addEventListener('change', function () {
+
+        const row = this.closest('tr');
+
+        // امسح أي حالة قديمة
+        row.classList.remove(
+          'status-viewed',
+          'status-review',
+          'status-fit',
+          'status-notfit'
+        );
+
+        // أضف الحالة الجديدة
+        if (this.value !== "default") {
+          row.classList.add('status-' + this.value);
+        }
+      });
+    });
+  </script>
+
+  <script>
+    document.getElementById('statusFilter').addEventListener('change', function () {
+
+      const selected = this.value;
+      const rows = document.querySelectorAll('tbody tr');
+
+      rows.forEach(row => {
+
+        if (selected === "all") {
+          row.style.display = "";
+          return;
+        }
+
+        if (row.classList.contains('status-' + selected)) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+
+      });
+
+    });
+  </script>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // تحديث العدادات
+      function updateCounters() {
+
+        const rows = document.querySelectorAll("tbody tr");
+
+        let counts = {
+          fit: 0,
+          notfit: 0,
+          review: 0,
+          viewed: 0,
+          default: 0
+        };
+
+        rows.forEach(row => {
+
+          if (row.classList.contains("status-fit")) {
+            counts.fit++;
+          }
+          else if (row.classList.contains("status-notfit")) {
+            counts.notfit++;
+          }
+          else if (row.classList.contains("status-review")) {
+            counts.review++;
+          }
+          else if (row.classList.contains("status-viewed")) {
+            counts.viewed++;
+          }
+          else {
+            counts.default++;
+          }
+
+        });
+
+        document.getElementById("count-fit").textContent = counts.fit;
+        document.getElementById("count-notfit").textContent = counts.notfit;
+        document.getElementById("count-review").textContent = counts.review;
+        document.getElementById("count-viewed").textContent = counts.viewed;
+        document.getElementById("count-default").textContent = counts.default;
+      }
+
+
+      // تغيير الحالة
+      document.querySelectorAll(".status-radio").forEach(radio => {
+
+        radio.addEventListener("change", function () {
+
+          const row = this.closest("tr");
+
+          // إزالة كل الحالات القديمة
+          row.classList.remove(
+            "status-fit",
+            "status-notfit",
+            "status-review",
+            "status-viewed"
+          );
+
+          // لو مش default نضيف الحالة الجديدة
+          if (this.value !== "default") {
+            row.classList.add("status-" + this.value);
+          }
+
+          updateCounters();
+        });
+
+      });
+
+
+      // تشغيل العدادات أول ما الصفحة تفتح
+      updateCounters();
+
+    });
+
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      document.querySelectorAll(".dropdown").forEach(dropdown => {
+
+        const button = dropdown.querySelector("button");
+        const checkboxes = dropdown.querySelectorAll(".lang-check");
+
+        checkboxes.forEach(check => {
+
+          check.addEventListener("change", function () {
+
+            const selected = [];
+
+            dropdown.querySelectorAll(".lang-check:checked")
+              .forEach(c => selected.push(c.value));
+
+            if (selected.length > 0) {
+              button.textContent = selected.join(" - ");
+            } else {
+              button.textContent = "اختر اللغات";
+            }
+
+          });
+
+        });
+
+      });
+
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const container = document.getElementById("features-container");
+      const addBtn = document.getElementById("add-feature");
+
+      let count = 1;
+
+      // إضافة ميزة
+      addBtn.addEventListener("click", function () {
+
+        count++;
+
+        const div = document.createElement("div");
+        div.classList.add("input-group", "mb-2", "feature-item");
+
+        div.innerHTML = `
+      <input type="text" 
+             class="form-control input_profile fs-6" 
+             placeholder="ميزة رقم ${count}">
+      <button class="btn btn-outline-danger remove-feature" type="button">
+        <i class="bi bi-trash"></i>
+      </button>
+    `;
+
+        container.appendChild(div);
+
+      });
+
+
+      // حذف ميزة (Event Delegation)
+      container.addEventListener("click", function (e) {
+
+        if (e.target.closest(".remove-feature")) {
+
+          const item = e.target.closest(".feature-item");
+
+          // امنع حذف آخر input
+          if (container.children.length > 1) {
+            item.remove();
+          }
+
+        }
+
+      });
+
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const container = document.getElementById("requirements-container");
+      const addBtn = document.getElementById("add-requirement");
+
+      let count = 1;
+
+      // إضافة اشتراط
+      addBtn.addEventListener("click", function () {
+
+        count++;
+
+        const div = document.createElement("div");
+        div.classList.add("input-group", "mb-2", "requirement-item");
+
+        div.innerHTML = `
+      <input type="text" 
+             class="form-control input_profile fs-6" 
+             placeholder="اشتراط رقم ${count}">
+      <button class="btn btn-outline-danger remove-requirement" type="button">
+        <i class="bi bi-trash"></i>
+      </button>
+    `;
+
+        container.appendChild(div);
+
+      });
+
+
+      // حذف اشتراط
+      container.addEventListener("click", function (e) {
+
+        if (e.target.closest(".remove-requirement")) {
+
+          const item = e.target.closest(".requirement-item");
+
+          if (container.children.length > 1) {
+            item.remove();
+          }
+
+        }
+
+      });
+
+    });
+  </script>
+
+
+
+
+  <!----------- end new script jobs ------------->
+
+
+
   <script src="js/script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -616,6 +940,7 @@
       }
     })
   </script>
+
   <script>
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
@@ -625,6 +950,12 @@
       }
     });
   </script>
+
+
+
+
+
+
 
 </body>
 
