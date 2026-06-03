@@ -1885,3 +1885,9 @@ footer {
     font-weight: lighter;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
 } */
+
+@media (max-width: 1024px) {
+   .box_banner{
+        height: 350px;    
+    } 
+}
