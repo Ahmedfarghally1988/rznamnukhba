@@ -192,46 +192,83 @@
   </header>
 
   <section class="slider_main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <div class="box_banner py-5 position-relative">
+    <div id="homeSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">    
 
-            <img src="images/banner.png" class="img-fluid img_banner 
-           wow animate__animated animate__fadeInUp" data-wow-delay="0s" />
+      <div class="carousel-inner">
 
-            <img src="images/pattern_1.png" class="img-fluid img_pattern_1
-           wow animate__animated animate__fadeInLeft" data-wow-delay="1.3s" />
-
-            <img src="images/pattern_2.png" class="img-fluid img_pattern_2
-           wow animate__animated animate__fadeInLeft" data-wow-delay="1.6s" />
-
-            <img src="images/birds.png" class="img-fluid img_birds
-           wow animate__animated animate__fadeInDown" data-wow-delay="1.9s" />
-
-            <img src="images/pattern_3.png" class="img-fluid img_pattern_3
-           wow animate__animated animate__fadeInUp" data-wow-delay="2.2s" />
-
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="box_banner">
+            <img src="images/banner-1.webp" class="img-fluid img_banner">
           </div>
-        </div>
-        <div class="col-md-6 col-12">
-          <div class="desc_banner">
-            <h1 class="wow animate__animated animate__fadeInRight" data-wow-delay="2.5s"> اهـــلاً وسهـــلاً بكـــم
-              فــي منصه الروزنامة </h1>
-            <p class="wow animate__animated animate__fadeInRight" data-wow-delay="2.8s">
-              هي منصة لرصد مواعيد وأماكن تنفيذ المبادرات المجتمعية والبرامج التدريبية وورش العمل والأنشطة والفعاليات
-              المتعلقة بالقطاعات الثلاث أولًا بأول.
-            </p>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="desc_banner desc_banner_slider">
+              <h1>أهلاً وسهلاً بكم في منصة الروزنامة</h1>
+              <p>
+                هي منصة لرصد مواعيد وأماكن تنفيذ المبادرات المجتمعية
+                والبرامج التدريبية وورش العمل.
+              </p>
 
-            <div class="d-flex align-items-center justify-content-end btn_banner gap-3">
-              <a href="#" class="wow animate__animated animate__fadeInRight" data-wow-delay="3.1s">أشترك الان</a>
-              <a href="#" class="wow animate__animated animate__fadeInRight" data-wow-delay="3.1s">اكتشف المزيد</a>
+              <div class="d-flex align-items-center justify-content-end btn_banner gap-3">
+                <a href="#">اشترك الآن</a>
+                <a href="#">اكتشف المزيد</a>
+              </div>
             </div>
-
-
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="box_banner">
+            <img src="images/banner-2.jpg" class="img-fluid img_banner">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="desc_banner desc_banner_slider">
+              <h1>أهلاً وسهلاً بكم في منصة الروزنامة</h1>
+              <p>
+                هي منصة لرصد مواعيد وأماكن تنفيذ المبادرات المجتمعية
+                والبرامج التدريبية وورش العمل.
+              </p>
+
+              <div class="d-flex align-items-center justify-content-end btn_banner gap-3">
+                <a href="#">اشترك الآن</a>
+                <a href="#">اكتشف المزيد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="box_banner">
+            <img src="images/banner-3.jpg" class="img-fluid img_banner">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="desc_banner desc_banner_slider">
+              <h1>أهلاً وسهلاً بكم في منصة الروزنامة</h1>
+              <p>
+                هي منصة لرصد مواعيد وأماكن تنفيذ المبادرات المجتمعية
+                والبرامج التدريبية وورش العمل.
+              </p>
+
+              <div class="d-flex align-items-center justify-content-end btn_banner gap-3">
+                <a href="#">اشترك الآن</a>
+                <a href="#">اكتشف المزيد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
+      <!-- النقاط -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="2"></button>
+      </div>
+
     </div>
   </section>
 
@@ -585,13 +622,13 @@
   <script src="js/owl.carousel.min.js"></script>
 
 
-<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      let count = 1;      
+      let count = 1;
       document.getElementById("addAxis").addEventListener("click", function () {
         count++;
         const container = document.getElementById("axesContainer");
